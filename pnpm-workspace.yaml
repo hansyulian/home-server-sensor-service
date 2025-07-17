@@ -1,0 +1,5 @@
+onlyBuiltDependencies:
+  - esbuild
+
+overrides:
+  '@hansyulian/utils': link:C:/Users/hansy/AppData/Local/pnpm/global/5/node_modules/@hansyulian/utils
