@@ -1,3 +1,4 @@
+import { appConfig } from "~/config";
 import { execPromise } from "~/utils/execPromise";
 
 export const hddInfo: { states: any[] } = {
@@ -27,7 +28,7 @@ export function stopDiskWatcher() {
 }
 
 async function reloadReadings() {
-  hddInfo.states = await readHddStates();
+  hddInfo.states = await readHddStates(appConfig.hddWatch);
 }
 
 async function readHddStates(hddNames?: string[]) {
